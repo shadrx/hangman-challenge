@@ -32,7 +32,7 @@ We should print out an underscore for each letter in the word to guess.  For exa
 
 `Word to guess: _ _ _`
 
-[Stuck? Click here for help!](hints.md#1)
+[Stuck? Click here for help!](hints.md#user-content-iteration-1-hints)
 
 Iteration 2 (guessing)
 -----
@@ -41,7 +41,7 @@ We should ask the user to guess a letter.
 If the letter they guess is in our word, we should reveal it.
 We should loop over these two steps
 
-[Stuck? Click here for help!](hints.md#2)
+[Stuck? Click here for help!](hints.md#user-content-iteration-2-hints)
 
 Iteration 3 (lives)
 -----
