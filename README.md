@@ -32,6 +32,8 @@ We should print out an underscore for each letter in the word to guess.  For exa
 
 `Word to guess: _ _ _`
 
+[Stuck? Click here for help!](hints.md#1)
+
 Iteration 2 (guessing and lives)
 -----
 
