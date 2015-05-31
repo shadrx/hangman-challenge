@@ -151,7 +151,7 @@ There's a fair bit going on in the above code, so try and look at the difference
 => ["APPLE", "BANANA"]
 ```
 
-So `["a", "r", "t"].map { |character| "_" }` will return `["_", "_", "_"]`. Line 3 shows the equvalent operation performed without the use of map.
+So `["a", "r", "t"].map { |character| "_" }` will return `["_", "_", "_"]`. Line 3 shows the equivalent operation performed without the use of map.
 
 Finally, we do a `["_", "_", "_"].join(" ")`. This turns the array into a string, with a space between each character. `"_ _ _"`.
 
