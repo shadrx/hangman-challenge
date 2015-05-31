@@ -170,6 +170,8 @@ puts word_to_display
 So, for every character in the word, we check if they've successfully guessed it in the past, and return the character or an underscore otherwise.
 
 [Iteration #3 Hints](#3)
+----
+
 Now we want to keep track of our user's lives. Once again, we're going to need a varariable outside of our loop to keep track.
 
 `lives_remaining = 7`
@@ -191,6 +193,8 @@ end
 ```
 
 [Iteration #4 Hints](#4)
+-----
+
 Now we want to add our victory and loss conditions. This is where we'll exit the loop.
 
 After our logic for guessing, let's check if the game is over. Let's start with winning. We know the user has won when all of the letters in the `word_to_guess` are in the `letters_successfully_guessed` array.
