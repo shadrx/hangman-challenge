@@ -31,7 +31,7 @@ puts "_ " * word_to_guess.length
 ```
 (Note the space after the underscore in the string.)
 
-[Iteration #2 Hints](hints.md#2)
+[Iteration #2 Hints](#2)
 ----
 
 So, in this iteration, we're going to let our users guess a letter.
