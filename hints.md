@@ -147,9 +147,11 @@ There's a fair bit going on in the above code, so try and look at the difference
 => [2, 4, 6]
 [2] irb(main)> ["apple", "banana"].map { |word| word.upcase }
 => ["APPLE", "BANANA"]
+[3] irb(main)> ["apple".upcase, "banna".upcase]
+=> ["APPLE", "BANANA"]
 ```
 
-So `["a", "r", "t"].map { |character| "_" }` will return `["_", "_", "_"]`.
+So `["a", "r", "t"].map { |character| "_" }` will return `["_", "_", "_"]`. Line 3 shows the equvalent operation performed without the use of map.
 
 Finally, we do a `["_", "_", "_"].join(" ")`. This turns the array into a string, with a space between each character. `"_ _ _"`.
 
