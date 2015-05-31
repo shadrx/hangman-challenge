@@ -34,28 +34,36 @@ We should print out an underscore for each letter in the word to guess.  For exa
 
 [Stuck? Click here for help!](hints.md#1)
 
-Iteration 2 (guessing and lives)
+Iteration 2 (guessing)
+-----
+
+We should ask the user to guess a letter.
+If the letter they guess is in our word, we should reveal it.
+We should loop over these two steps
+
+[Stuck? Click here for help!](hints.md#2)
+
+Iteration 3 (lives)
 -----
 
 The user should start out with 7 lives.
 
-We should ask the user to guess a letter.
+We should display their lives remaining before each guess.
 
-If the letter they guess is in our word, we should reveal it.
+When the user guesses a letter, if their guess is incorrect, they should lose a life.
 
-If it's not, they should lose a life.
+[Stuck? Click here for help!](hints.md#3)
 
-We should display their lives to them before each guess.
-
-
-Iteration 3 (winning and losing)
+Iteration 4 (winning and losing)
 -----
 
 If the user guesses all the letters in a word, they should be told they've won the game, and the program should end.
 
 If the user has no lives remaining, they should be informed they've been hung and the program should exit.
 
-Iteration 4 (make it pretty)
+[Stuck? Click here for help!](hints.md#4)
+
+Iteration 5 (make it pretty)
 -----
 
 It's important for our programs to have a quality user interface. As such, our program should display a text based view of hangman. To help out with this I've provided a series of fantastic text based depictions of a cruel spelling related execution. Put them to use!
@@ -129,3 +137,5 @@ art = [
 ```
 
 You can copy that into your application. You can print out the first image with `puts art[0]`. Feel free to make your own ascii art as well!
+
+[Stuck? Click here for help!](hints.md#5)
