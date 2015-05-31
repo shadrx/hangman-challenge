@@ -57,3 +57,71 @@ Iteration 4 (make it pretty)
 -----
 
 It's important for our programs to have a quality user interface. As such, our program should display a text based view of hangman. To help out with this I've provided a series of fantastic text based depictions of a cruel spelling related execution. Put them to use!
+
+```ruby
+art = [
+  <<-ART
+/----
+|   |
+|
+|
+|
+|
+--------
+  ART,
+  <<-ART
+/----
+|   |
+|   O
+|
+|
+|
+--------
+  ART,
+  <<-ART
+/----
+|   |
+|   O
+|   |
+|
+|
+--------
+  ART,
+  <<-ART
+/----
+|   |
+|   O
+|  /|
+|
+|
+--------
+  ART,
+  <<-ART
+/----
+|   |
+|   O
+|  /|\\
+|
+|
+--------
+  ART,
+  <<-ART
+/----
+|   |
+|   O
+|  /|\\
+|  /
+|
+--------
+  ART,
+  <<-ART
+/----
+|   |
+|   O
+|  /|\\
+|  / \
+|
+--------
+  ART
+]
+```
