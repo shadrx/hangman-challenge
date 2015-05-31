@@ -139,3 +139,13 @@ art = [
 You can copy that into your application. You can print out the first image with `puts art[0]`. Feel free to make your own ascii art as well!
 
 [Stuck? Click here for help!](hints.md#5)
+
+Stretch goals
+----
+
+There are lots of fine details to get right. For example, what happens when...
+
+* You enter a couple of letters as a guess
+* You enter a number as a guess
+* You guess the same letter over and over again
+* You enter nothing
