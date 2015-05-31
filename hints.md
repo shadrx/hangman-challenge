@@ -240,3 +240,24 @@ end
 ```
 
 Test it out! Do you lose when the lives hit 0?
+
+
+[Iteration #5 Hints](#5)
+----
+
+You're now at the best stage! Making it pretty.
+
+Copy the provided ascii art from the readme to the top of your program.
+
+Start by replacing the code that tells the user how many lives they have left with this:
+
+```
+puts art[0]
+```
+
+It should print out a work of art every time you guess. However, we want it to change based on how many lifes the user has left. Think about how you might do that.
+
+```
+puts art[7 - lives_remaining]
+```
+

@@ -149,3 +149,16 @@ There are lots of fine details to get right. For example, what happens when...
 * You enter a number as a guess
 * You guess the same letter over and over again
 * You enter nothing
+
+Refactoring
+----
+
+Take a look at your code. Are you happy with it? Is it beautiful?
+
+Is it clear what each part of the code does? Are the variable names long and descriptive? Polish your code up.
+
+
+Code Review
+----
+
+Time to get some feedback. Push your code up and post it on the slack community, and get feedback from your fellow Railsn00bs.
