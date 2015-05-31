@@ -70,7 +70,7 @@ It's important for our programs to have a quality user interface. As such, our p
 
 ```ruby
 art = [
-  <<-ART
+  <<-ART ,
 /----
 |   |
 |
@@ -78,26 +78,26 @@ art = [
 |
 |
 --------
-  ART,
-  <<-ART
-/----
-|   |
-|   O
-|
-|
-|
---------
-  ART,
-  <<-ART
+  ART
+  <<-ART ,
 /----
 |   |
 |   O
+|
+|
+|
+--------
+  ART
+  <<-ART ,
+/----
+|   |
+|   O
 |   |
 |
 |
 --------
-  ART,
-  <<-ART
+  ART
+  <<-ART ,
 /----
 |   |
 |   O
@@ -105,8 +105,8 @@ art = [
 |
 |
 --------
-  ART,
-  <<-ART
+  ART
+  <<-ART ,
 /----
 |   |
 |   O
@@ -114,8 +114,8 @@ art = [
 |
 |
 --------
-  ART,
-  <<-ART
+  ART
+  <<-ART ,
 /----
 |   |
 |   O
@@ -123,17 +123,18 @@ art = [
 |  /
 |
 --------
-  ART,
-  <<-ART
+  ART
+  <<-ART ,
 /----
 |   |
 |   O
 |  /|\\
-|  / \
+|  / \\
 |
 --------
   ART
 ]
+
 ```
 
 You can copy that into your application. You can print out the first image with `puts art[0]`. Feel free to make your own ascii art as well!
