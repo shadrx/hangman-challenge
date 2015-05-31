@@ -168,3 +168,71 @@ puts word_to_display
 ```
 
 So, for every character in the word, we check if they've successfully guessed it in the past, and return the character or an underscore otherwise.
+
+[Iteration #3 Hints](#3)
+Now we want to keep track of our user's lives. Once again, we're going to need a varariable outside of our loop to keep track.
+
+`lives_remaining = 7`
+
+Let's display that to the user every time before they guess.
+
+```ruby
+puts "Lives remaining: #{lives_remaining}"
+```
+
+We want to make it that when the user guesses a letter that isn't in the word, that number goes down.
+
+```ruby
+if word_to_guess.include? letter_guessed
+  letters_successfully_guessed << letter_guessed
+else
+  lives_remaining -= 1
+end
+```
+
+[Iteration #4 Hints](#4)
+Now we want to add our victory and loss conditions. This is where we'll exit the loop.
+
+After our logic for guessing, let's check if the game is over. Let's start with winning. We know the user has won when all of the letters in the `word_to_guess` are in the `letters_successfully_guessed` array.
+
+We can check this by subtracting the `letters_successfully_guessed` from `word_to_guess.chars`. Quick demo:
+
+```irb
+$ irb
+[1] pry(main)> ["a", "b", "c"] - ["a", "b"]
+=> ["c"]
+[2] pry(main)> word_to_guess = "art"
+=> "art"
+[3] pry(main)> letters_successfully_guessed = ["a", "r"]
+=> ["a", "r"]
+[4] pry(main)> word_to_guess.chars - letters_successfully_guessed
+=> ["t"]
+[5] pry(main)> (word_to_guess.chars - letters_successfully_guessed).any?
+=> true
+[6] pry(main)> letters_successfully_guessed = ["a", "r", "t"]
+=> ["a", "r", "t"]
+[7] pry(main)> (word_to_guess.chars - letters_successfully_guessed).any?
+=> false
+```
+
+Our code:
+
+```ruby
+if (word_to_guess.chars - letters_successfully_guessed).none?
+  puts "Congratulations, you won!"
+  break
+end
+```
+
+Remember, `break` is used to stop a loop.
+
+Now, for the losing conditions. We want to check if the user has run out of lives.
+
+```ruby
+if lives_remaining <= 0
+  puts "You ran out of lives, suck it".
+  break
+end
+```
+
+Test it out! Do you lose when the lives hit 0?

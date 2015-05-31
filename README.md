@@ -52,7 +52,7 @@ We should display their lives remaining before each guess.
 
 When the user guesses a letter, if their guess is incorrect, they should lose a life.
 
-[Stuck? Click here for help!](hints.md#3)
+[Stuck? Click here for help!](hints.md#user-content-iteration-3-hints)
 
 Iteration 4 (winning and losing)
 -----
@@ -61,7 +61,7 @@ If the user guesses all the letters in a word, they should be told they've won t
 
 If the user has no lives remaining, they should be informed they've been hung and the program should exit.
 
-[Stuck? Click here for help!](hints.md#4)
+[Stuck? Click here for help!](hints.md#user-content-iteration-4-hints)
 
 Iteration 5 (make it pretty)
 -----
@@ -138,7 +138,7 @@ art = [
 
 You can copy that into your application. You can print out the first image with `puts art[0]`. Feel free to make your own ascii art as well!
 
-[Stuck? Click here for help!](hints.md#5)
+[Stuck? Click here for help!](hints.md#user-content-iteration-5-hints)
 
 Stretch goals
 ----
