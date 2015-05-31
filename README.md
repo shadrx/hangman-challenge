@@ -125,3 +125,5 @@ art = [
   ART
 ]
 ```
+
+You can copy that into your application. You can print out the first image with `puts art[0]`. Feel free to make your own ascii art as well!
