@@ -99,6 +99,14 @@ def print_word(word, guessed_letters)
     puts word.chars.map {|c| guessed_letters.include?(c) ? c : "_"}.join(" ")
 end
 
+def print_error(message)
+    puts "\n" + message + "\n"
+end
+
+def letter?(lookAhead)
+  lookAhead =~ /[A-Za-z]/
+end
+
 def play_game
     lives_left = STARTING_LIVES
     guessed_letters = Set.new()
@@ -110,6 +118,18 @@ def play_game
         print_word(word_to_guess, guessed_letters)
 
         guessed_letter = gets.strip
+
+        if guessed_letter.length > 1
+          print_error("Cheater. You have more than than guess in a turn!")
+          next
+        elsif guessed_letter.empty?
+          print_error("You didn't enter anything... try again :). I know you can do it.")
+          next
+        elsif not letter? guessed_letter[0]
+          print_error("Your character needs to be a letter. Not a number, nor some funny symbol/emoji.")
+          next
+        end
+
         guessed_letters.add(guessed_letter)
 
         if word_to_guess.include? guessed_letter
