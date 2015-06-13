@@ -88,6 +88,7 @@ STARTING_LIVES = 7
 
 def print_welcome
     puts "=== RailsN00bs Hangman ==="
+    puts "Welcome to Hangman. You've got #{STARTING_LIVES} lives left, good luck :)!"
 end
 
 def print_man_being_hanged(lives_left)
