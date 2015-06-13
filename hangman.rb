@@ -103,9 +103,6 @@ def play_game
     guessed_letters = Set.new()
     word_to_guess = File.readlines('words.txt').map { |word| word.strip }.sample
 
-    puts word_to_guess
-    print_welcome()
-
     until word_to_guess.chars.all?{ |c| guessed_letters.include?(c) } or lives_left == 0
         puts "Lives left: #{lives_left}"
         print_man_being_hanged(lives_left)
@@ -128,4 +125,15 @@ def play_game
     end
 end
 
-play_game()
+loop do
+    print_welcome()
+    play_game()
+
+    puts "Play again? (y/n)"
+
+    answer = gets.strip.downcase
+
+    if answer == 'n'
+        break
+    end
+end
