@@ -121,7 +121,8 @@ def play_game
     if lives_left > 0
         puts "You win!"
     else
-        puts "You lost... better luck next time!"
+        print_man_being_hanged(STARTING_LIVES + 1) # could be nicer!
+        puts "You lost... :( better luck next time!"
     end
 end
 
