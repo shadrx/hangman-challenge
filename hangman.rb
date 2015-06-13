@@ -36,6 +36,7 @@ def play_game
 
         guessed_letter = gets.strip
 
+        # handle invalid input
         if guessed_letter.length > 1
           print_error("Cheater. You have more than than guess in a turn!")
           next
@@ -47,6 +48,7 @@ def play_game
           next
         end
 
+        # check if they've got guessed correctly
         guessed_letters.add(guessed_letter)
 
         if word_to_guess.include? guessed_letter
